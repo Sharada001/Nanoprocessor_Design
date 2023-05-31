@@ -1,12 +1,14 @@
 #-----------------------------------------------------------
-# Webtalk v2018.2.1 (64-bit)
-# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
-# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Sun May 28 23:00:17 2023
-# Process ID: 15772
-# Current directory: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim/xsim.dir/TB_8_RCA_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed May 31 16:46:22 2023
+# Process ID: 8752
+# Current directory: D:/UOM/2nd Semester/Computer organization and Digital Design/NanoProcessor_3bit_Counter_Added/NanoProcessor_3bit_Counter_Added.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/UOM/2nd Semester/Computer organization and Digital Design/NanoProcessor_3bit_Counter_Added/NanoProcessor_3bit_Counter_Added.sim/sim_1/behav/xsim/xsim.dir/TB_8_RCA_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/UOM/2nd Semester/Computer organization and Digital Design/NanoProcessor_3bit_Counter_Added/NanoProcessor_3bit_Counter_Added.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/UOM/2nd Semester/Computer organization and Digital Design/NanoProcessor_3bit_Counter_Added/NanoProcessor_3bit_Counter_Added.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim/xsim.dir/TB_8_RCA_behav/webtalk/xsim_webtalk.tcl -notrace
+source D:/UOM/2nd -notrace
+couldn't read file "D:/UOM/2nd": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May 31 16:46:22 2023...
