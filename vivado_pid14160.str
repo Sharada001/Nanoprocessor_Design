@@ -1,0 +1,471 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 14160
+License: Customer
+
+Current time: 	Thu Jun 01 11:11:25 IST 2023
+Time zone: 	India Standard Time (Asia/Colombo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 20 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	E:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Shara
+User home directory: C:/Users/Shara
+User working directory: F:/Workplace/Vivado/Nanoprocessor_Design
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2018.2
+RDI_DATADIR: E:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Shara/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Shara/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Shara/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/Workplace/Vivado/Nanoprocessor_Design/vivado.log
+Vivado journal file location: 	F:/Workplace/Vivado/Nanoprocessor_Design/vivado.jou
+Engine tmp dir: 	F:/Workplace/Vivado/Nanoprocessor_Design/.Xil/Vivado-14160-LAPTOP-AH4SVABP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2018.2
+XILINX_SDK: E:/Xilinx/SDK/2018.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	215 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 498 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// aL (ck): Older Project Version: addNotify
+// [GUI Memory]: 59 MB (+59222kb) [00:00:04]
+// [Engine Memory]: 498 MB (+370469kb) [00:00:04]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: F:\Workplace\Vivado\Nanoprocessor_Design\Nanoprocessor_Design.xpr. Version: Vivado v2018.1 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aL (ck)
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/accha/Desktop/Nanoprocessor_Design' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'Nanoprocessor_Design.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 72 MB (+10880kb) [00:00:08]
+// [Engine Memory]: 598 MB (+79082kb) [00:00:08]
+// [GUI Memory]: 85 MB (+9218kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 621 MB. GUI used memory: 39 MB. Current time: 6/1/23 11:11:28 AM IST
+// Project name: Nanoprocessor_Design; location: F:/Workplace/Vivado/Nanoprocessor_Design; part: xc7a35tcpg236-1
+// [Engine Memory]: 630 MB (+1601kb) [00:00:09]
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ck): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+// TclEventType: DG_GRAPH_GENERATED
+dismissDialog("Critical Messages"); // a (ck)
+// D (ck): Invalid Top Modules: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Modules"); // D (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Adder_3_Bit.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Adder_3_Bit.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Adder_3_Bit.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Adder_3_Bit.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, Adder_3_Bit.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 2, false); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, FA.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, HA.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, HA.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, RCA_8.vhd]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, RCA_8.vhd]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/RCA_8.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/RCA_8.vhd 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 4); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, TB_8_RCA.vhd]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, TB_8_RCA.vhd]", 5, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_ENABLE, "Enable File"); // ad (aj, ck)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, ck)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sim_1/new/TB_8_RCA.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sim_1/new/TB_8_RCA.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, TB_Adder_3_Bit.vhd]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, TB_Adder_3_Bit.vhd]", 5, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPORT_ALL_SRCS, "Copy All Files Into Project"); // ad (aj, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sim_1/imports/new/TB_Adder_3_Bit.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sim_1/imports/new/TB_Adder_3_Bit.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+// [GUI Memory]: 92 MB (+3783kb) [00:01:44]
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+String[] filenames31467 = {"F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/FA.vhd", "F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/HA.vhd", "F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 18 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 659 MB. GUI used memory: 45 MB. Current time: 6/1/23 11:13:17 AM IST
+// Tcl Message: add_files -norecurse -scan_for_includes {F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/HA.vhd F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/FA.vhd F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/HA.vhd F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/FA.vhd F:/Workplace/Vivado/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd} 
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 661 MB (+185kb) [00:01:59]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+// Elapsed time: 31 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// Elapsed time: 388 seconds
+setFileChooser("F:/Workplace/Vivado/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 396 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd 
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse F:/Workplace/Vivado/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd 
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// Elapsed time: 151 seconds
+String[] filenames16706 = {"F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd", "F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 158 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes {F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd} 
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd)]", 2, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd), FA_0 : FA(Behavioral) (FA.vhd)]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd), FA_0 : FA(Behavioral) (FA.vhd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd), FA_0 : FA(Behavioral) (FA.vhd)]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd), FA_0 : FA(Behavioral) (FA.vhd)]", 2); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RCA_4(Behavioral) (RCA_4.vhd)]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3, true); // B (D, ck) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+setFileChooser("F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 11 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd 
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse F:/Workplace/Vivado/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd 
+// [GUI Memory]: 98 MB (+523kb) [00:13:02]
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd), Decoder_3_to_8_0 : Decoder_3_to_8(Behavioral) (Decoder_3_to_8.vhd)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Mux_8_to_1(Behavioral) (Mux_8_to_1.vhd)]", 2); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+// 'h' command handler elapsed time: 7 seconds
+dismissDialog("Add Sources"); // c (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// Elapsed time: 58 seconds
+setFileChooser("F:/Workplace/Vivado/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 64 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse F:/Workplace/Vivado/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd 
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, D_FF(Behavioral) (D_FF.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LUT_16_7(Behavioral) (LUT_16_7.vhd)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, LUT_16_7(Behavioral) (LUT_16_7.vhd)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 218 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ad (aj, c)
+// Elapsed time: 29 seconds
+setFileChooser("F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 34 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd 
+// c (ck): Add Sources: addNotify
+// bx (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd 
+dismissDialog("Add Sources"); // bx (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Reg(Behavioral) (Reg.vhd)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Reg(Behavioral) (Reg.vhd)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Reg(Behavioral) (Reg.vhd)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Reg.vhd", 431, 202); // ce (w, ck)
