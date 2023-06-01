@@ -65,3 +65,6 @@ update_compile_order -fileset sources_1
 add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd
 import_files -norecurse F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Jun  1 11:34:59 2023] Launched synth_1...
+Run output will be captured here: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/runme.log

@@ -46,3 +46,5 @@ update_compile_order -fileset sources_1
 add_files -norecurse -scan_for_includes F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd
 import_files -norecurse F:/Workplace/Vivado/Lab6/Lab6.srcs/sources_1/new/Reg.vhd
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
