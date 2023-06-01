@@ -2,11 +2,12 @@
 
 <h2>Components already finished ~</h2>
 <ul>
-  <li>3-bits Program Counter<br></li>
+  
 </ul>
 
 <h2>Components remaining ~</h2> 
 <ul>
+  <li>3-bits Program Counter<br></li>
   <li>4-bit Add/Sub Unit</li>
   <li>Register Bank</li>
   <li>3-to-8 decoder</li>
