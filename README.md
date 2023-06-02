@@ -4,12 +4,12 @@
 <ul>
 <li>Register Bank</li>
 <li>3-bit Adder</li>
+<li>4-bit Add/Sub Unit</li>
 </ul>
 
 <h2>Components remaining ~</h2> 
 <ul>
   <li>3-bits Program Counter<br></li>
-  <li>4-bit Add/Sub Unit</li>
   <li>3-to-8 decoder</li>
   <li>8-way 4-bit Mux</li>
   <li>Program ROM</li>
