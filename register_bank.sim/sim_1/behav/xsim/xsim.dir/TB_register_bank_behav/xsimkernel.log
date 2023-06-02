@@ -1,7 +1,0 @@
-Running: xsim.dir/TB_register_bank_behav/xsimk.exe -simmode gui -wdb TB_register_bank_behav.wdb -simrunnum 0 -socket 49789
-Design successfully loaded
-Design Loading Memory Usage: 7560 KB (Peak: 7560 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 8184 KB (Peak: 8184 KB)
-Simulation CPU Usage: 15 ms

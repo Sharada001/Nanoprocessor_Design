@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="C:/Users/accha/Desktop/Nanoprocessor_Design/register_bank.xpr">
+<Project Version="7" Minor="36" Path="C:/Users/accha/Desktop/register_bank/register_bank.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="afb93070ba7d44c5a4e771a5746a94a7"/>
+    <Option Name="Id" Val="99548d50c62c42789b0fc2ad4d3011df"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -21,7 +21,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -103,6 +102,8 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/TB_register_bank.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/register_bank.srcs/sim_1/new/TB_register_bank.vhd"/>
+          <Attr Name="ImportTime" Val="1685734301"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
