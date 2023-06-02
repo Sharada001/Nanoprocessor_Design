@@ -1,0 +1,1 @@
+-wto "afb93070ba7d44c5a4e771a5746a94a7" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TB_register_bank_behav" "xil_defaultlib.TB_register_bank" -log "elaborate.log" 
