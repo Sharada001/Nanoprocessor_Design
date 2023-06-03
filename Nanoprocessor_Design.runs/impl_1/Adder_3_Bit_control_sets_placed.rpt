@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed May 31 16:26:33 2023
-| Host         : Chathuras-MSI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Sat Jun  3 19:14:38 2023
+| Host         : LAPTOP-AH4SVABP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Adder_3_Bit_control_sets_placed.rpt
 | Design       : Adder_3_Bit
 | Device       : xc7a35t

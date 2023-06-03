@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Wed May 31 16:26:49 2023
-| Host             : Chathuras-MSI running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date             : Sat Jun  3 19:14:58 2023
+| Host             : LAPTOP-AH4SVABP running 64-bit major release  (build 9200)
 | Command          : report_power -file Adder_3_Bit_power_routed.rpt -pb Adder_3_Bit_power_summary_routed.pb -rpx Adder_3_Bit_power_routed.rpx
 | Design           : Adder_3_Bit
 | Device           : xc7a35tcpg236-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.052        |
+| Total On-Chip Power (W)  | 1.403        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.977        |
-| Device Static (W)        | 0.075        |
+| Dynamic (W)              | 1.330        |
+| Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 74.7         |
-| Junction Temperature (C) | 35.3         |
+| Max Ambient (C)          | 78.0         |
+| Junction Temperature (C) | 32.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.015 |        4 |       --- |             --- |
-|   LUT as Logic |     0.015 |        3 |     20800 |            0.01 |
-| Signals        |     0.047 |       10 |       --- |             --- |
-| I/O            |     1.914 |       10 |       106 |            9.43 |
-| Static Power   |     0.075 |          |           |                 |
-| Total          |     2.052 |          |           |                 |
+| Slice Logic    |     0.010 |        4 |       --- |             --- |
+|   LUT as Logic |     0.010 |        2 |     20800 |           <0.01 |
+| Signals        |     0.030 |        8 |       --- |             --- |
+| I/O            |     1.289 |        8 |       106 |            7.55 |
+| Static Power   |     0.073 |          |           |                 |
+| Total          |     1.403 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,11 +67,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.101 |       0.087 |      0.014 |
-| Vccaux    |       1.800 |     0.168 |       0.155 |      0.013 |
+| Vccint    |       1.000 |     0.068 |       0.056 |      0.012 |
+| Vccaux    |       1.800 |     0.117 |       0.104 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.896 |       0.895 |      0.001 |
+| Vcco18    |       1.800 |     0.604 |       0.603 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| Adder_3_Bit |     1.977 |
+| Adder_3_Bit |     1.330 |
 +-------------+-----------+
 
 

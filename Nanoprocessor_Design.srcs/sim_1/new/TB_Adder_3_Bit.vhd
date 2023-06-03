@@ -37,75 +37,42 @@ end TB_Adder_3_Bit;
 
 architecture Behavioral of TB_Adder_3_Bit is
 COMPONENT Adder_3_Bit
-    PORT(A0,A1,A2,B0,B1,B2,C_in : IN STD_LOGIC;
-         S0,S1,S2,C_out: OUT STD_LOGIC);
+    Port ( Input : in STD_LOGIC_VECTOR (2 downto 0);
+           C_in : in STD_LOGIC;
+           Output : out STD_LOGIC_VECTOR (2 downto 0);
+           Overflow : out STD_LOGIC );
 END COMPONENT;
-SIGNAL A0,A1,A2,B0,B1,B2,C_in: std_logic;
-SIGNAL S0,S1,S2,C_out : std_logic;
+
+SIGNAL Input : STD_LOGIC_VECTOR (2 downto 0);
+SIGNAL C_in : STD_LOGIC;
+SIGNAL Output : STD_LOGIC_VECTOR (2 downto 0);
+SIGNAL Overflow : STD_LOGIC;
+
 begin
+
 UUT: Adder_3_Bit PORT MAP(
-A0 => A0,
-A1 => A1,
-A2 => A2,
-B0 => B0,
-B1 => B1,
-B2 => B2,
-C_in => C_in,
-C_out => C_out,
-S0 => S0,
-S1 => S1,
-S2 => S2
+    Input => Input,
+    C_in => C_in,
+    Output => Output,
+    Overflow => Overflow
 );
+
 process
 begin
-    A0 <= '0';
-    A1 <= '1';
-    A2 <= '0';
-    B0 <= '1';
-    B1 <= '0';
-    B2 <= '1';
-    C_in <= '0';
-    WAIT FOR 100 ns;
-        A0 <= '0';
-        A1 <= '1';
-        A2 <= '0';
-        B0 <= '1';
-        B1 <= '1';
-        B2 <= '0';
-        C_in <= '0';
-    WAIT FOR 100 ns;
-        A0 <= '0';
-        A1 <= '1';
-        A2 <= '1';
-        B0 <= '1';
-        B1 <= '0';
-        B2 <= '1';
-        C_in <= '0'; 
-    
-    WAIT FOR 100 ns;
-       A0 <= '1';
-       A1 <= '1';
-       A2 <= '1';
-       B0 <= '0';
-       B1 <= '0';
-       B2 <= '1';
-       C_in <= '0'; 
-     WAIT FOR 100 ns;
-         A0 <= '1';
-         A1 <= '0';
-         A2 <= '0';
-         B0 <= '0';
-         B1 <= '0';
-         B2 <= '0';
-         C_in <= '0'; 
-      WAIT FOR 100 ns;
-       A0 <= '1';
-       A1 <= '1';
-       A2 <= '0';
-       B0 <= '1';
-       B1 <= '1';
-       B2 <= '0';
-       C_in <= '0'; 
+    C_in <= '1';
+    Input <= "010"; 
+    WAIT FOR 150 ns;
+    Input <= "000"; 
+    WAIT FOR 150 ns;
+    Input <= "100"; 
+    WAIT FOR 150 ns;
+    Input <= "011"; 
+    WAIT FOR 150 ns;
+    Input <= "111"; 
+    WAIT FOR 150 ns;
+    Input <= "110"; 
+    WAIT FOR 150 ns;
     WAIT;
 end process;
+
 end Behavioral;

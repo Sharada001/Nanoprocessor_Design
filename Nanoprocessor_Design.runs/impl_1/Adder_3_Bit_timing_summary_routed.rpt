@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Wed May 31 16:26:49 2023
-| Host         : Chathuras-MSI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Sat Jun  3 19:14:58 2023
+| Host         : LAPTOP-AH4SVABP running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Adder_3_Bit_timing_summary_routed.rpt -pb Adder_3_Bit_timing_summary_routed.pb -rpx Adder_3_Bit_timing_summary_routed.rpx -warn_on_violation
 | Design       : Adder_3_Bit
 | Device       : 7a35t-cpg236
-| Speed File   : -1  PRODUCTION 1.21 2018-02-08
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report

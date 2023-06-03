@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03/18/2023 12:58:43 AM
+-- Create Date: 03/17/2023 08:28:05 AM
 -- Design Name: 
 -- Module Name: FA - Behavioral
 -- Project Name: 
@@ -40,27 +40,33 @@ entity FA is
 end FA;
 
 architecture Behavioral of FA is
-component HA
-    port (
-    A: in std_logic;
-    B: in std_logic;
-    S:out std_logic;
-    C: out std_logic);
+
+component HA 
+ port ( 
+ A: in std_logic; 
+ B: in std_logic; 
+ S: out std_logic; 
+ C: out std_logic); 
 end component;
-signal HA0_S, HA0_C,HA1_S, HA1_C : std_logic;
+
+SIGNAL HA0_S, HA0_C, HA1_S, HA1_C : std_logic;
+
 begin
-HA_0 : HA
-    port map (
-    A => A,
-    B => B,
-    S => HA0_S,
-    C => HA0_C);
-HA_1 : HA
-        port map (
-        A => HA0_S,
-        B => C_in,
-        S => HA1_S,
-        C => HA1_C);
+
+HA_0 : HA 
+ port map ( 
+ A => A, 
+ B => B, 
+ S => HA0_S, 
+ C => HA0_C); 
+HA_1 : HA 
+ port map ( 
+ A => HA0_S, 
+ B => C_in, 
+ S => HA1_S, 
+ C => HA1_C); 
+
 S <= HA1_S;
-C_out <= HA0_C or HA1_C;
+C_out <= ( HA1_C AND HA0_S ) OR HA0_C ;
+
 end Behavioral;

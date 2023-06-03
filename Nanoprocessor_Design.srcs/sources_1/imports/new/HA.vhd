@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03/18/2023 12:32:39 AM
+-- Create Date: 03/16/2023 11:14:30 PM
 -- Design Name: 
 -- Module Name: HA - Behavioral
 -- Project Name: 
@@ -41,6 +41,6 @@ end HA;
 architecture Behavioral of HA is
 
 begin
-S <= A xor B ;
-C <= A and B ;
+    c <= A AND B;
+    S <= A XOR B;
 end Behavioral;

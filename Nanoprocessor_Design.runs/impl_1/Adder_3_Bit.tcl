@@ -69,11 +69,11 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {D:/UOM/2nd Semester/Computer organization and Digital Design/Nanoprocessor/program_counter.cache/wt} [current_project]
-  set_property parent.project_path {D:/UOM/2nd Semester/Computer organization and Digital Design/Nanoprocessor/program_counter.xpr} [current_project]
-  set_property ip_output_repo {{D:/UOM/2nd Semester/Computer organization and Digital Design/Nanoprocessor/program_counter.cache/ip}} [current_project]
+  set_property webtalk.parent_dir F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.cache/wt [current_project]
+  set_property parent.project_path F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr [current_project]
+  set_property ip_output_repo F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{D:/UOM/2nd Semester/Computer organization and Digital Design/Nanoprocessor/program_counter.runs/synth_1/Adder_3_Bit.dcp}}
+  add_files -quiet F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/Adder_3_Bit.dcp
   link_design -top Adder_3_Bit -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -137,7 +137,7 @@ set rc [catch {
   create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file Adder_3_Bit_timing_summary_routed.rpt -pb Adder_3_Bit_timing_summary_routed.pb -rpx Adder_3_Bit_timing_summary_routed.rpx -warn_on_violation "
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file Adder_3_Bit_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file Adder_3_Bit_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file Adder_3_Bit_bus_skew_routed.rpt -pb Adder_3_Bit_bus_skew_routed.pb -rpx Adder_3_Bit_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
