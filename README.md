@@ -1,5 +1,3 @@
-# Nanoprocessor_Design
-
 # Nanoprocessor Design
 
 <h2>3_bit_Adder Component Interface ~</h2>
