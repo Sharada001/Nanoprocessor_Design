@@ -3,10 +3,10 @@
   <File Type="PWROPT-DCP" Name="Adder_3_Bit_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="Adder_3_Bit_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Adder_3_Bit.tcl"/>
+  <File Type="OPT-DCP" Name="Adder_3_Bit_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="Adder_3_Bit_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Adder_3_Bit_reports.tcl"/>
   <File Type="BG-DRC" Name="Adder_3_Bit.drc"/>
-  <File Type="OPT-DCP" Name="Adder_3_Bit_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="Adder_3_Bit.hwdef"/>
   <File Type="OPT-DRC" Name="Adder_3_Bit_drc_opted.rpt"/>
   <File Type="PLACE-DCP" Name="Adder_3_Bit_placed.dcp"/>
@@ -24,12 +24,15 @@
   <File Type="ROUTE-DRC" Name="Adder_3_Bit_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Adder_3_Bit_drc_routed.pb"/>
   <File Type="BITSTR-MSK" Name="Adder_3_Bit.msk"/>
+  <File Type="BITSTR-LTX" Name="Adder_3_Bit.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Adder_3_Bit_drc_routed.rpx"/>
   <File Type="BG-BGN" Name="Adder_3_Bit.bgn"/>
+  <File Type="BITSTR-MMI" Name="Adder_3_Bit.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Adder_3_Bit_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-RBT" Name="Adder_3_Bit.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Adder_3_Bit_methodology_drc_routed.rpx"/>
   <File Type="BG-BIN" Name="Adder_3_Bit.bin"/>
+  <File Type="BITSTR-SYSDEF" Name="Adder_3_Bit.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Adder_3_Bit_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Adder_3_Bit_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Adder_3_Bit_route_status.rpt"/>
@@ -37,15 +40,12 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="Adder_3_Bit_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Adder_3_Bit_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Adder_3_Bit_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="Adder_3_Bit.vdi"/>
   <File Type="ROUTE-CLK" Name="Adder_3_Bit_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Adder_3_Bit.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Adder_3_Bit_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Adder_3_Bit_postroute_physopt_bb.dcp"/>
   <File Type="BITSTR-NKY" Name="Adder_3_Bit.nky"/>
   <File Type="BITSTR-BMM" Name="Adder_3_Bit_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="Adder_3_Bit.mmi"/>
-  <File Type="BITSTR-LTX" Name="Adder_3_Bit.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Adder_3_Bit.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

@@ -55,8 +55,7 @@ component FA
         C_out : out std_logic);
     end component;
     
-    SIGNAL FA0_S, FA0_C , FA1_S,FA1_C, FA2_S, FA2_C
-    : std_logic;
+    SIGNAL FA0_S, FA0_C , FA1_S,FA1_C, FA2_S, FA2_C : std_logic;
 begin
     FA_0 : FA
         port map (
