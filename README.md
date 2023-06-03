@@ -1,25 +1,15 @@
 # Nanoprocessor Design
 
-<h2>Components already finished ~</h2>
-<ul>
-  
-</ul>
+<h2>Program_Counter_3_bits Component Interface ~</h2>
 
-<h2>Components remaining ~</h2> 
-<ul>
-  <li>3-bits Program Counter<br></li>
-  <li>4-bit Add/Sub Unit</li>
-  <li>Register Bank</li>
-  <li>3-to-8 decoder</li>
-  <li>8-way 4-bit Mux</li>
-  <li>Program ROM</li>
-  <li>3-bit Adder</li>
-  <li>2-way 3-bit Mux</li>
-  <li>2-way 4-bit Mux</li>
-  <li>Instruction Decoder</li>
-  <li>Clock</li>
-  
-  
-</ul>
-
-
+<pre>
+<code>
+-- Program_Counter_3_bits Component Interface
+component Program_Counter_3_bits
+    Port ( in_addr : in STD_LOGIC_VECTOR (2 downto 0);
+           reset : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           out_addr : out STD_LOGIC_VECTOR (2 downto 0));
+end component;
+</code>
+</pre>

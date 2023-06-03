@@ -1,78 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685599519">
-  <File Type="BITSTR-BMM" Name="RCA_4_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="RCA_4_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="RCA_4_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="RCA_4_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="RCA_4.tcl"/>
-  <File Type="OPT-TIMING" Name="RCA_4_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="RCA_4_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="RCA_4_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="RCA_4_reports.tcl"/>
-  <File Type="OPT-DRC" Name="RCA_4_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="RCA_4.hwdef"/>
-  <File Type="PWROPT-DCP" Name="RCA_4_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="RCA_4_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="RCA_4_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="RCA_4_placed.dcp"/>
-  <File Type="PLACE-IO" Name="RCA_4_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="RCA_4_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="RCA_4_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="RCA_4_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="RCA_4_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="RCA_4_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="RCA_4_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="RCA_4.bgn"/>
-  <File Type="PLACE-TIMING" Name="RCA_4_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="RCA_4_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="RCA_4.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="RCA_4_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="RCA_4_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="RCA_4_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="RCA_4.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="RCA_4_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="RCA_4_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="RCA_4_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="RCA_4_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="RCA_4_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="RCA_4_drc_routed.pb"/>
+<GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685826024">
+  <File Type="BITSTR-BMM" Name="Program_Counter_3_bits_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Program_Counter_3_bits_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Program_Counter_3_bits_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Program_Counter_3_bits_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Program_Counter_3_bits.tcl"/>
+  <File Type="OPT-TIMING" Name="Program_Counter_3_bits_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Program_Counter_3_bits_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Program_Counter_3_bits_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Program_Counter_3_bits_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Program_Counter_3_bits_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Program_Counter_3_bits.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Program_Counter_3_bits_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Program_Counter_3_bits_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Program_Counter_3_bits_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Program_Counter_3_bits_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Program_Counter_3_bits_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Program_Counter_3_bits_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Program_Counter_3_bits_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Program_Counter_3_bits_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Program_Counter_3_bits_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Program_Counter_3_bits_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Program_Counter_3_bits_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Program_Counter_3_bits.bgn"/>
+  <File Type="PLACE-TIMING" Name="Program_Counter_3_bits_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Program_Counter_3_bits_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Program_Counter_3_bits.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Program_Counter_3_bits_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Program_Counter_3_bits_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Program_Counter_3_bits_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Program_Counter_3_bits.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Program_Counter_3_bits_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Program_Counter_3_bits_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Program_Counter_3_bits_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Program_Counter_3_bits_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Program_Counter_3_bits_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Program_Counter_3_bits_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="RCA_4.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="RCA_4_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="RCA_4.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="RCA_4_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RCA_4_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="RCA_4.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RCA_4_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="RCA_4_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="RCA_4_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="RCA_4_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="RCA_4_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="RCA_4_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="RCA_4_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="RCA_4_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="RCA_4_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="RCA_4_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="RCA_4_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="RCA_4_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RCA_4_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RCA_4_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RCA_4_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RCA_4_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RCA_4_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RCA_4_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="RCA_4_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="RCA_4.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RCA_4_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="RCA_4.rbt"/>
-  <File Type="BITSTR-NKY" Name="RCA_4.nky"/>
-  <File Type="BG-DRC" Name="RCA_4.drc"/>
-  <File Type="RDI-RDI" Name="RCA_4.vdi"/>
+  <File Type="BITSTR-LTX" Name="Program_Counter_3_bits.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Program_Counter_3_bits_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Program_Counter_3_bits.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Program_Counter_3_bits_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Program_Counter_3_bits_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Program_Counter_3_bits.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Program_Counter_3_bits_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Program_Counter_3_bits_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Program_Counter_3_bits_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Program_Counter_3_bits_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Program_Counter_3_bits_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Program_Counter_3_bits_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Program_Counter_3_bits_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Program_Counter_3_bits_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Program_Counter_3_bits_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Program_Counter_3_bits_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Program_Counter_3_bits_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Program_Counter_3_bits_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Program_Counter_3_bits_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Program_Counter_3_bits_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Program_Counter_3_bits_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Program_Counter_3_bits_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Program_Counter_3_bits_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Program_Counter_3_bits_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Program_Counter_3_bits_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Program_Counter_3_bits.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Program_Counter_3_bits_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Program_Counter_3_bits.rbt"/>
+  <File Type="BITSTR-NKY" Name="Program_Counter_3_bits.nky"/>
+  <File Type="BG-DRC" Name="Program_Counter_3_bits.drc"/>
+  <File Type="RDI-RDI" Name="Program_Counter_3_bits.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Program_Counter_3_bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
         <Attr Name="ImportTime" Val="1679023649"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -81,6 +88,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
         <Attr Name="ImportTime" Val="1678989247"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -89,6 +97,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/RCA_4.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
         <Attr Name="ImportTime" Val="1679053302"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -151,8 +160,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="RCA_4"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="Program_Counter_3_bits"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
