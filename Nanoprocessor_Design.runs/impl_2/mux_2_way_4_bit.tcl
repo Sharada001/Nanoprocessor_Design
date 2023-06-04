@@ -69,11 +69,11 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/accha/Desktop/abc/Nanoprocessor_Design.cache/wt [current_project]
-  set_property parent.project_path C:/Users/accha/Desktop/abc/Nanoprocessor_Design.xpr [current_project]
-  set_property ip_output_repo C:/Users/accha/Desktop/abc/Nanoprocessor_Design.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.cache/wt [current_project]
+  set_property parent.project_path C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.xpr [current_project]
+  set_property ip_output_repo C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/accha/Desktop/abc/Nanoprocessor_Design.runs/synth_1/mux_2_way_4_bit.dcp
+  add_files -quiet C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/mux_2_way_4_bit.dcp
   link_design -top mux_2_way_4_bit -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
