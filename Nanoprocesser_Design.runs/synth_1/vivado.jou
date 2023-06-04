@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun  4 14:29:29 2023
+# Process ID: 7504
+# Current directory: C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1
+# Command line: vivado.exe -log register_bank.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source register_bank.tcl
+# Log file: C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1/register_bank.vds
+# Journal file: C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source register_bank.tcl -notrace
