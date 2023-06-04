@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685599499">
-  <File Type="PA-TCL" Name="RCA_4.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="RCA_4_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="RCA_4_reports.tcl"/>
-  <File Type="RDS-RDS" Name="RCA_4.vds"/>
-  <File Type="RDS-UTIL" Name="RCA_4_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="RCA_4_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="RCA_4.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="RCA_4_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="RCA_4_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685859355">
+  <File Type="PA-TCL" Name="mux_2_way_4_bit.tcl"/>
+  <File Type="REPORTS-TCL" Name="mux_2_way_4_bit_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mux_2_way_4_bit.vds"/>
+  <File Type="RDS-UTIL" Name="mux_2_way_4_bit_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mux_2_way_4_bit_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mux_2_way_4_bit.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux_2_way_4_bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/new/mux_2_way_4_bit.vhd"/>
+        <Attr Name="ImportTime" Val="1685857228"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
         <Attr Name="ImportTime" Val="1679023649"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -21,7 +27,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
         <Attr Name="ImportTime" Val="1678989247"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -29,7 +36,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/RCA_4.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
         <Attr Name="ImportTime" Val="1679053302"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -38,7 +46,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/D_FF.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
         <Attr Name="ImportTime" Val="1680966166"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -47,7 +55,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Mux_8_to_1.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
         <Attr Name="ImportTime" Val="1679408765"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -56,7 +64,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Decoder_3_to_8.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
         <Attr Name="ImportTime" Val="1679400143"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -65,7 +73,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Decoder_2_to_4.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
         <Attr Name="ImportTime" Val="1679390147"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -74,7 +82,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/LUT_16_7.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
         <Attr Name="ImportTime" Val="1683126378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -83,7 +91,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Reg.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2 to 4 mux/Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
         <Attr Name="ImportTime" Val="1682413441"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -91,8 +99,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="RCA_4"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="mux_2_way_4_bit"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

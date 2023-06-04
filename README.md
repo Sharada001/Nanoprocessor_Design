@@ -1,21 +1,15 @@
 # Nanoprocessor Design
 
-<h2>Components already finished ~</h2>
-<ul>
-<li>Register Bank</li>
-<li>3-bit Adder</li>
-<li>4-bit Add/Sub Unit</li>
-<li>8-way 4-bit Mux</li>
-<li>2-way 3-bit Mux</li>
-<li>3-bits Program Counter<br></li>
-<li>2-way 4-bit Mux</li>
-</ul>
+<h2>Mux_2_way_4_bit Component Interface ~</h2>
 
-<h2>Components remaining ~</h2> 
-<ul>
-  <li>Program ROM</li>
-  <li>Instruction Decoder</li>
-  <li>Clock</li>
-</ul>
-
-
+<pre>
+<code>
+-- Mux_2_way_4_bit Component Interface
+component 2_way_4_bit_Mux
+    Port ( input_num : in STD_LOGIC_VECTOR (3 downto 0);
+           immediate_value : in STD_LOGIC_VECTOR (3 downto 0);
+           load_select : in STD_LOGIC;
+           out_to_reg_bank : out STD_LOGIC_VECTOR (3 downto 0));
+end component;
+</code>
+</pre>
