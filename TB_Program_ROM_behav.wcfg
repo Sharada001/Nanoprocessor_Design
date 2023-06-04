@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Program_ROM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Program_ROM" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="892241000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="218"></NameColumnWidth>
+      <ValueColumnWidth column_width="228"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/TB_Program_ROM/address" type="array">
+      <obj_property name="ElementShortName">address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">address[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Program_ROM/instruction_code" type="array">
+      <obj_property name="ElementShortName">instruction_code[11:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_code[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Program_ROM/UUT/elevenSegmant_ROM" type="array">
+      <obj_property name="ElementShortName">elevenSegmant_ROM[0:7][11:0]</obj_property>
+      <obj_property name="ObjectShortName">elevenSegmant_ROM[0:7][11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>
