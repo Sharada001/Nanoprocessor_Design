@@ -1,10 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Decoder_2_to_4
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Decoder_3_to_8
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.srcs/sources_1/imports/new/Reg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Reg
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.srcs/sources_1/new/register_bank.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity register_bank
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/accha/Desktop/reg bank/Nanoprocessor_Design/Nanoprocesser_Design.srcs/sim_1/imports/new/TB_register_bank.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity TB_register_bank

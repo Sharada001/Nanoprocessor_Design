@@ -35,6 +35,7 @@ entity register_bank is
     Port ( input : in STD_LOGIC_VECTOR (3 downto 0);
            out0, out1, out2, out3, out4, out5, out6, out7 : out STD_LOGIC_VECTOR (3 downto 0);
            Clk : in STD_LOGIC;
+           Reset : in STD_LOGIC :='0';
            Reg_EN : in STD_LOGIC_VECTOR (2 downto 0));
 end register_bank;
 
@@ -47,14 +48,14 @@ component Decoder_3_to_8
 end component;
 
 component Reg 
-    Port ( D : in STD_LOGIC_VECTOR (3 downto 0) := "0000";
+    Port ( D : in STD_LOGIC_VECTOR (3 downto 0) ;
            En : in STD_LOGIC;
            Clk : in STD_LOGIC;
            Q : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 
 signal Reg_EN_vector : STD_LOGIC_VECTOR (7 downto 0);
-
+signal inout1, inout2, inout3, inout4, inout5, inout6, inout7 : STD_LOGIC_VECTOR (3 downto 0);
 begin
     Decoder : Decoder_3_to_8 
     port map(
@@ -75,7 +76,7 @@ begin
     port map(
     EN=>Reg_EN_vector(1),
     Clk=>Clk,
-    Q=>out1,
+    Q=>inout1,
     D=>input
     );
        
@@ -83,7 +84,7 @@ begin
    port map(
    EN=>Reg_EN_vector(2),
    Clk=>Clk,
-   Q=>out2,
+   Q=>inout2,
    D=>input
    );
     
@@ -91,7 +92,7 @@ begin
   port map(
   EN=>Reg_EN_vector(3),
   Clk=>Clk,
-  Q=>out3,
+  Q=>inout3,
   D=>input
   );
 
@@ -99,7 +100,7 @@ begin
   port map(
   EN=>Reg_EN_vector(4),
   Clk=>Clk,
-  Q=>out4,
+  Q=>inout4,
   D=>input
   );
   
@@ -107,7 +108,7 @@ begin
  port map(
  EN=>Reg_EN_vector(5),
  Clk=>Clk,
- Q=>out5,
+ Q=>inout5,
  D=>input
  );
  
@@ -115,7 +116,7 @@ Register6 : Reg
 port map(
 EN=>Reg_EN_vector(6),
 Clk=>Clk,
-Q=>out6,
+Q=>inout6,
 D=>input
 );
 
@@ -123,8 +124,27 @@ Register7 : Reg
 port map(
 EN=>Reg_EN_vector(7),
 Clk=>Clk,
-Q=>out7,
+Q=>inout7,
 D=>input
 );
- 
+process (Reset,inout1, inout2, inout3, inout4, inout5, inout6, inout7) is
+begin
+if (Reset='1') then
+    out1 <= "0000";
+    out2 <= "0000";
+    out3 <= "0000";
+    out4 <= "0000";
+    out5 <= "0000";
+    out6 <= "0000";
+    out7 <= "0000";
+else
+    out1 <= inout1;
+    out2 <= inout2;
+    out3 <= inout3;
+    out4 <= inout4;
+    out5 <= inout5;
+    out6 <= inout6;
+    out7 <= inout7;
+end if;
+end process; 
 end Behavioral;

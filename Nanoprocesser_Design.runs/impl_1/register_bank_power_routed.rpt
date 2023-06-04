@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Sun Jun  4 14:30:40 2023
+| Date             : Mon Jun  5 01:04:34 2023
 | Host             : Chathuras-MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file register_bank_power_routed.rpt -pb register_bank_power_summary_routed.pb -rpx register_bank_power_routed.rpx
 | Design           : register_bank
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.048        |
+| Total On-Chip Power (W)  | 3.995        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.976        |
-| Device Static (W)        | 0.072        |
+| Dynamic (W)              | 3.912        |
+| Device Static (W)        | 0.083        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 79.8         |
-| Junction Temperature (C) | 30.2         |
+| Max Ambient (C)          | 65.0         |
+| Junction Temperature (C) | 45.0         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.023 |       44 |       --- |             --- |
-|   LUT as Logic |     0.016 |        4 |     20800 |            0.02 |
+| Slice Logic    |     0.052 |       72 |       --- |             --- |
+|   LUT as Logic |     0.045 |       18 |     20800 |            0.09 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Register     |    <0.001 |       28 |     41600 |            0.07 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.089 |       44 |       --- |             --- |
-| I/O            |     0.863 |       40 |       106 |           37.74 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     1.048 |          |           |                 |
+| Signals        |     0.136 |       73 |       --- |             --- |
+| I/O            |     3.725 |       41 |       106 |           38.68 |
+| Static Power   |     0.083 |          |           |                 |
+| Total          |     3.995 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,11 +70,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.156 |       0.145 |      0.011 |
-| Vccaux    |       1.800 |     0.081 |       0.068 |      0.013 |
+| Vccint    |       1.000 |     0.244 |       0.224 |      0.020 |
+| Vccaux    |       1.800 |     0.316 |       0.302 |      0.014 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.395 |       0.394 |      0.001 |
+| Vcco18    |       1.800 |     1.748 |       1.747 |      0.001 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -137,17 +137,17 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| register_bank        |     0.976 |
-|   Decoder            |     0.030 |
-|     Decoder_2_to_4_0 |     0.012 |
+| register_bank        |     3.912 |
+|   Decoder            |     0.027 |
+|     Decoder_2_to_4_0 |     0.009 |
 |     Decoder_2_to_4_1 |     0.018 |
-|   Register1          |     0.001 |
-|   Register2          |     0.002 |
-|   Register3          |     0.001 |
-|   Register4          |     0.001 |
-|   Register5          |     0.002 |
-|   Register6          |     0.002 |
-|   Register7          |     0.002 |
+|   Register1          |     0.010 |
+|   Register2          |     0.012 |
+|   Register3          |     0.010 |
+|   Register4          |     0.010 |
+|   Register5          |     0.010 |
+|   Register6          |     0.014 |
+|   Register7          |     0.012 |
 +----------------------+-----------+
 
 

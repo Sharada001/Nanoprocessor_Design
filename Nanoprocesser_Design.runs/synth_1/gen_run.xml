@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685869166">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685907200">
   <File Type="PA-TCL" Name="register_bank.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="register_bank_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="register_bank_reports.tcl"/>

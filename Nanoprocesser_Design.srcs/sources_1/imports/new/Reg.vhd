@@ -35,7 +35,7 @@ entity Reg is
     Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
            En : in STD_LOGIC;
            Clk : in STD_LOGIC;
-           Q : out STD_LOGIC_VECTOR (3 downto 0));
+           Q : out STD_LOGIC_VECTOR (3 downto 0):= "0000");
 end Reg;
 
 architecture Behavioral of Reg is
