@@ -11,12 +11,12 @@
 <li>2-way 4-bit Mux</li>
 <li>Clock</li>
 <li>Program ROM</li>
+ <li>Instruction Decoder</li>
 </ul>
 
 <h2>Components remaining ~</h2> 
 <ul>
-
-  <li>Instruction Decoder</li>
+  
 </ul>
 
 
