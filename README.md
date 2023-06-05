@@ -1,25 +1,21 @@
 # Nanoprocessor Design
 
-<h2>Components already finished ~</h2>
-<ul>
-  
-</ul>
+<h2>Instruction_Decoder Component Interface ~</h2>
 
-<h2>Components remaining ~</h2> 
-<ul>
-  <li>3-bits Program Counter<br></li>
-  <li>4-bit Add/Sub Unit</li>
-  <li>Register Bank</li>
-  <li>3-to-8 decoder</li>
-  <li>8-way 4-bit Mux</li>
-  <li>Program ROM</li>
-  <li>3-bit Adder</li>
-  <li>2-way 3-bit Mux</li>
-  <li>2-way 4-bit Mux</li>
-  <li>Instruction Decoder</li>
-  <li>Clock</li>
-  
-  
-</ul>
-
+<pre>
+<code>
+-- Instruction_Decoder Component Interface
+componenet Instruction_Decoder 
+    Port ( instruction_code : in STD_LOGIC_VECTOR (11 downto 0);
+           jump_check : in STD_LOGIC_VECTOR (3 downto 0);
+           reg_enable : out STD_LOGIC_VECTOR (2 downto 0);
+           load_select : out STD_LOGIC;
+           immediate_value : out STD_LOGIC_VECTOR (3 downto 0);
+           reg_select : out STD_LOGIC_VECTOR (5 downto 0);
+           add_sub_sel : out STD_LOGIC;
+           jump_flag : out STD_LOGIC;
+           jump_address : out STD_LOGIC_VECTOR (2 downto 0));
+end component;
+</code>
+</pre>
 
