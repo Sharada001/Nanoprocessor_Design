@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue Jun  6 14:40:43 2023
+# Process ID: 8892
+# Current directory: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1
+# Command line: vivado.exe -log register_bank.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source register_bank.tcl
+# Log file: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1/register_bank.vds
+# Journal file: F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocesser_Design.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source register_bank.tcl -notrace
