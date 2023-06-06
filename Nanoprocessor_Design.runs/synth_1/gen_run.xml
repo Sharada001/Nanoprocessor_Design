@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685880951">
   <File Type="PA-TCL" Name="Clock.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Clock_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Clock_reports.tcl"/>
   <File Type="RDS-RDS" Name="Clock.vds"/>
   <File Type="RDS-UTIL" Name="Clock_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Clock_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Clock.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Clock_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Clock_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Clock.vhd">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Nanoprocesser_Design.srcs/sources_1/new/Clock.vhd"/>
+        <Attr Name="ImportTime" Val="1686040111"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
