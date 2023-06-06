@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1685912338">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1686045257">
   <File Type="PA-TCL" Name="Program_ROM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Program_ROM_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Program_ROM_reports.tcl"/>
   <File Type="RDS-RDS" Name="Program_ROM.vds"/>
   <File Type="RDS-UTIL" Name="Program_ROM_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Program_ROM_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Program_ROM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Program_ROM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Program_ROM_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Program_ROM.vhd">
@@ -17,7 +20,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
         <Attr Name="ImportTime" Val="1679023649"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,7 +29,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
         <Attr Name="ImportTime" Val="1678989247"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,7 +38,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/RCA_4.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
         <Attr Name="ImportTime" Val="1679053302"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -44,7 +47,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/D_FF.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
         <Attr Name="ImportTime" Val="1680966166"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -53,7 +56,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Mux_8_to_1.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
         <Attr Name="ImportTime" Val="1679408765"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,7 +65,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Decoder_3_to_8.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
         <Attr Name="ImportTime" Val="1679400143"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -71,7 +74,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Decoder_2_to_4.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
         <Attr Name="ImportTime" Val="1679390147"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -80,7 +83,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/LUT_16_7.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
         <Attr Name="ImportTime" Val="1683126378"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -89,7 +92,7 @@
     <File Path="$PSRCDIR/sources_1/imports/new/Reg.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
         <Attr Name="ImportTime" Val="1682413441"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

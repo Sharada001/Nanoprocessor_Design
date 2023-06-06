@@ -41,7 +41,7 @@ architecture Behavioral of Program_ROM is
 
 type rom_type is array (0 to 7) of std_logic_vector(11 downto 0);
  
- signal elevenSegmant_ROM : rom_type := (  -- Program is hardcoded here.
+ signal twelveSegmant_ROM : rom_type := (  -- Program is hardcoded here.
  "010010110010", -- 0
  "111100101011", -- 1
  "010010101000", -- 2
@@ -54,6 +54,6 @@ type rom_type is array (0 to 7) of std_logic_vector(11 downto 0);
 
 begin
 
-instruction_code <= elevenSegmant_ROM(to_integer(unsigned(address)));
+instruction_code <= twelveSegmant_ROM(to_integer(unsigned(address)));
 
 end Behavioral;

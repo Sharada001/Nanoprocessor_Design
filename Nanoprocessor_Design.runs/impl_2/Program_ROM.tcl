@@ -69,11 +69,11 @@ set rc [catch {
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/accha/Desktop/program rom/Nanoprocessor_Design.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/accha/Desktop/program rom/Nanoprocessor_Design.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/accha/Desktop/program rom/Nanoprocessor_Design.cache/ip}} [current_project]
+  set_property webtalk.parent_dir F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.cache/wt [current_project]
+  set_property parent.project_path F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr [current_project]
+  set_property ip_output_repo F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/accha/Desktop/program rom/Nanoprocessor_Design.runs/synth_1/Program_ROM.dcp}}
+  add_files -quiet F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/Program_ROM.dcp
   link_design -top Program_ROM -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -137,7 +137,7 @@ set rc [catch {
   create_report "impl_2_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file Program_ROM_timing_summary_routed.rpt -pb Program_ROM_timing_summary_routed.pb -rpx Program_ROM_timing_summary_routed.rpx -warn_on_violation "
   create_report "impl_2_route_report_incremental_reuse_0" "report_incremental_reuse -file Program_ROM_incremental_reuse_routed.rpt"
   create_report "impl_2_route_report_clock_utilization_0" "report_clock_utilization -file Program_ROM_clock_utilization_routed.rpt"
-  create_report "impl_2_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx"
+  create_report "impl_2_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file Program_ROM_bus_skew_routed.rpt -pb Program_ROM_bus_skew_routed.pb -rpx Program_ROM_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {

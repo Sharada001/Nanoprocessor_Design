@@ -85,8 +85,8 @@ void simulate(char *);
 extern SYSTEMCLIB_IMP_DLLSPEC void local_register_implicit_channel(int, char*);
 extern void implicit_HDL_SCinstatiate();
 
-extern int xsim_argc_copy ;
-extern char** xsim_argv_copy ;
+extern SYSTEMCLIB_IMP_DLLSPEC int xsim_argc_copy ;
+extern SYSTEMCLIB_IMP_DLLSPEC char** xsim_argv_copy ;
 
 int main(int argc, char **argv)
 {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.1 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2.1 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="C:/Users/accha/Desktop/program rom/Nanoprocessor_Design.xpr">
+<Project Version="7" Minor="38" Path="F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d19e7a875b964009a2beac5cb2854e8e"/>
@@ -33,7 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="basys3"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="23"/>
+    <Option Name="WTXSimLaunchSim" Val="24"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -53,6 +53,7 @@
     <Option Name="XSimArrayDisplayLimit" Val="1024"/>
     <Option Name="XSimTraceLimit" Val="65536"/>
     <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -66,7 +67,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/FA.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/FA.vhd"/>
           <Attr Name="ImportTime" Val="1679023649"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -75,7 +76,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/HA.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/HA.vhd"/>
           <Attr Name="ImportTime" Val="1678989247"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -84,7 +85,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/RCA_4.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab3/Lab3.srcs/sources_1/new/RCA_4.vhd"/>
           <Attr Name="ImportTime" Val="1679053302"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -93,7 +94,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/D_FF.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab5/Lab5.srcs/sources_1/new/D_FF.vhd"/>
           <Attr Name="ImportTime" Val="1680966166"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -102,7 +103,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/Mux_8_to_1.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Mux_8_to_1.vhd"/>
           <Attr Name="ImportTime" Val="1679408765"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -111,7 +112,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/Decoder_3_to_8.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Decoder_3_to_8.vhd"/>
           <Attr Name="ImportTime" Val="1679400143"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,7 +121,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/Decoder_2_to_4.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab_4/Lab_4.srcs/sources_1/new/Decoder_2_to_4.vhd"/>
           <Attr Name="ImportTime" Val="1679390147"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -129,7 +130,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/LUT_16_7.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab7/Lab7.srcs/sources_1/new/LUT_16_7.vhd"/>
           <Attr Name="ImportTime" Val="1683126378"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -138,7 +139,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/Reg.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nanoprocessor_Design/Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/Lab6/Lab6.srcs/sources_1/new/Reg.vhd"/>
           <Attr Name="ImportTime" Val="1682413441"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -208,7 +209,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
