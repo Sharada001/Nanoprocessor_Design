@@ -118,10 +118,8 @@ end component;
 </pre>
 
 <h2>Instruction_Decoder(Helper component) Component Interface ~</h2>
-<h4>This is literally only an instruction decoder.<br> 
-But to comply with the given instructions, it is better<br> 
-to use this as a low level component of a main component which<br>
-controls everything but named as instruction decoder.</h4>
+<h5>This is literally only an instruction decoder.<br> 
+But to comply with the given instructions, it is better to use this as a low level component of a main component which controls everything but named as instruction decoder.</h5>
 <pre>
 <code>
 -- Instruction_Decoder Component Interface
