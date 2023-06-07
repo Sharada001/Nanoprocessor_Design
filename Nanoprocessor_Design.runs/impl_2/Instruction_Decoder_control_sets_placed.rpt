@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Mon Jun  5 15:04:06 2023
-| Host         : Chathuras-MSI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Wed Jun  7 09:49:15 2023
+| Host         : LAPTOP-AH4SVABP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Instruction_Decoder_control_sets_placed.rpt
 | Design       : Instruction_Decoder
 | Device       : xc7a35t

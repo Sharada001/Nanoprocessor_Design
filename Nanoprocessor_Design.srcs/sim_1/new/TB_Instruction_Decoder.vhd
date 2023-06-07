@@ -38,30 +38,37 @@ end TB_Instruction_Decoder;
 architecture Behavioral of TB_Instruction_Decoder is
 component Instruction_Decoder 
     Port ( instruction_code : in STD_LOGIC_VECTOR (11 downto 0);
-           
            immediate_value : out STD_LOGIC_VECTOR (3 downto 0);
-           reg_main,reg_add : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
+           RegA_addr, RegB_addr : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
            jump_address : out STD_LOGIC_VECTOR (2 downto 0);
-           operation : out STD_LOGIC_VECTOR (1 downto 0)); --This is the first two bits which indicates what to do (Add,Move..etc)
-          
+           register_EN : out STD_LOGIC_VECTOR (2 downto 0);
+           --operation : out STD_LOGIC_VECTOR (1 downto 0); --This is the first two bits which indicates what to do (Add,Move..etc)
+           add_sub_sel : out STD_LOGIC;
+           load_sel : out STD_LOGIC );
 end component;
+
 signal instruction_code :  STD_LOGIC_VECTOR (11 downto 0);
 signal immediate_value :  STD_LOGIC_VECTOR (3 downto 0);
-signal  reg_main,reg_add : STD_LOGIC_VECTOR (2 downto 0); 
+signal RegB_addr, RegA_addr : STD_LOGIC_VECTOR (2 downto 0); 
 signal jump_address :  STD_LOGIC_VECTOR (2 downto 0);
-signal operation :  STD_LOGIC_VECTOR (1 downto 0);
+signal register_EN : STD_LOGIC_VECTOR (2 downto 0);
+signal add_sub_sel : STD_LOGIC;
+signal load_sel : STD_LOGIC; 
 
 begin
 UUT: Instruction_Decoder Port map(
-    instruction_code=>instruction_code  ,
+    instruction_code=> instruction_code,
     immediate_value => immediate_value,
-    reg_main =>reg_main,
-    reg_add => reg_add,
+    RegB_addr => RegB_addr,
+    RegA_addr => RegA_addr,
     jump_address => jump_address,
-    operation =>operation
+    register_EN => register_EN,
+    add_sub_sel => add_sub_sel,
+    load_sel => load_sel
 );
-process
-begin
+
+process begin
+
 instruction_code <= "011101110000";
 wait for 500ns;
 

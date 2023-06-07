@@ -3,9 +3,9 @@
     with args -log Instruction_Decoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Instruction_Decoder.tcl
 
 
-****** Vivado v2018.1 (64-bit)
-  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
-  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+****** Vivado v2018.2.1 (64-bit)
+  **** SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+  **** IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source Instruction_Decoder.tcl -notrace
@@ -14,29 +14,28 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21920 
+INFO: Helper process launched with PID 15100 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 383.094 ; gain = 96.906
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 382.496 ; gain = 97.871
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/accha/Desktop/Instruction Decoder/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (1#1) [C:/Users/accha/Desktop/Instruction Decoder/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:44]
-WARNING: [Synth 8-3330] design Instruction_Decoder has an empty top module
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (1#1) [F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.789 ; gain = 150.602
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 437.371 ; gain = 152.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.789 ; gain = 150.602
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 437.371 ; gain = 152.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 437.371 ; gain = 152.746
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.789 ; gain = 150.602
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 436.789 ; gain = 150.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 437.371 ; gain = 152.746
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -49,6 +48,8 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -56,6 +57,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module Instruction_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -73,9 +78,8 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3330] design Instruction_Decoder has an empty top module
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -88,7 +92,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -100,7 +104,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -124,7 +128,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -137,7 +141,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -149,25 +153,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -183,22 +187,24 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |IBUF |    12|
-|2     |OBUF |    15|
+|1     |LUT1 |     1|
+|2     |LUT3 |     3|
+|3     |IBUF |    12|
+|4     |OBUF |    18|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    27|
+|1     |top      |       |    34|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 540.035 ; gain = 253.848
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 568.500 ; gain = 283.875
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -208,10 +214,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 656.066 ; gain = 382.410
-INFO: [Common 17-1381] The checkpoint 'C:/Users/accha/Desktop/Instruction Decoder/Nanoprocessor_Design.runs/synth_1/Instruction_Decoder.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 674.559 ; gain = 401.766
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/Instruction_Decoder.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Instruction_Decoder_utilization_synth.rpt -pb Instruction_Decoder_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 656.066 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jun  5 15:03:18 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 674.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  7 09:48:37 2023...

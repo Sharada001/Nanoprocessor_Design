@@ -44,21 +44,17 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-extern void execute_12(char*, char *);
-extern void execute_7(char*, char *);
-extern void execute_8(char*, char *);
 extern void execute_9(char*, char *);
-extern void execute_10(char*, char *);
-extern void execute_11(char*, char *);
+extern void execute_8(char*, char *);
 extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[7] = {(funcp)execute_12, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_10, (funcp)execute_11, (funcp)vhdl_transfunc_eventcallback};
-const int NumRelocateId= 7;
+funcp funcTab[3] = {(funcp)execute_9, (funcp)execute_8, (funcp)vhdl_transfunc_eventcallback};
+const int NumRelocateId= 3;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/TB_Instruction_Decoder_behav/xsim.reloc",  (void **)funcTab, 7);
-	iki_vhdl_file_variable_register(dp + 2832);
-	iki_vhdl_file_variable_register(dp + 2888);
+	iki_relocate(dp, "xsim.dir/TB_Instruction_Decoder_behav/xsim.reloc",  (void **)funcTab, 3);
+	iki_vhdl_file_variable_register(dp + 3264);
+	iki_vhdl_file_variable_register(dp + 3320);
 
 
 	/*Populate the transaction function pointer field in the whole net structure */
@@ -89,8 +85,8 @@ void simulate(char *);
 extern SYSTEMCLIB_IMP_DLLSPEC void local_register_implicit_channel(int, char*);
 extern void implicit_HDL_SCinstatiate();
 
-extern int xsim_argc_copy ;
-extern char** xsim_argv_copy ;
+extern SYSTEMCLIB_IMP_DLLSPEC int xsim_argc_copy ;
+extern SYSTEMCLIB_IMP_DLLSPEC char** xsim_argv_copy ;
 
 int main(int argc, char **argv)
 {
