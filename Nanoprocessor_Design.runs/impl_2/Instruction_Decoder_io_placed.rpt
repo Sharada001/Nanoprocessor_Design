@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Wed Jun  7 09:49:14 2023
+| Date                      : Wed Jun  7 16:34:22 2023
 | Host                      : LAPTOP-AH4SVABP running 64-bit major release  (build 9200)
 | Command                   : report_io -file Instruction_Decoder_io_placed.rpt
 | Design                    : Instruction_Decoder

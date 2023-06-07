@@ -10,12 +10,12 @@ controls everything but named as instruction decoder.</h4>
 -- Instruction_Decoder Component Interface
 component Instruction_Decoder 
     Port ( instruction_code : in STD_LOGIC_VECTOR (11 downto 0);
-           
            immediate_value : out STD_LOGIC_VECTOR (3 downto 0);
-           reg_main,reg_add : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
+           RegA_addr, RegB_addr : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
            jump_address : out STD_LOGIC_VECTOR (2 downto 0);
-           operation : out STD_LOGIC_VECTOR (1 downto 0)); --This is the first two bits which indicates what to do (Add,Move..etc)
-          
+           register_EN : out STD_LOGIC_VECTOR (2 downto 0);
+           add_sub_sel : out STD_LOGIC;
+           load_sel : out STD_LOGIC );
 end component;
 </code>
 </pre>

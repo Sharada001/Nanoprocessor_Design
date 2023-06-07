@@ -69,12 +69,19 @@ UUT: Instruction_Decoder Port map(
 
 process begin
 
-instruction_code <= "011101110000";
-wait for 500ns;
+instruction_code <= "011100000000";
+wait for 200ns;
 
-instruction_code <= "111010000111";
-wait for 500ns;
+instruction_code <= "111010000110";
+wait for 200ns;
+
+instruction_code <= "001011000000";
+wait for 200ns;
+
+instruction_code <= "101010001110";
+wait for 200ns;
 
 wait;
 end process;
+
 end Behavioral;

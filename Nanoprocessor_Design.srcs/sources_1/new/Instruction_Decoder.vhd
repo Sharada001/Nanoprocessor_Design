@@ -37,7 +37,6 @@ entity Instruction_Decoder is
            RegA_addr, RegB_addr : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
            jump_address : out STD_LOGIC_VECTOR (2 downto 0);
            register_EN : out STD_LOGIC_VECTOR (2 downto 0);
-           --operation : out STD_LOGIC_VECTOR (1 downto 0); --This is the first two bits which indicates what to do (Add,Move..etc)
            add_sub_sel : out STD_LOGIC;
            load_sel : out STD_LOGIC );  
 end Instruction_Decoder;
@@ -49,7 +48,6 @@ begin
 process (instruction_code) is begin
 
 -- Ra and Rb are swapped compared to what given in PDF
---operation <= instruction_code(11 downto 10); --Function definition (addition,move,etc)
 RegB_addr <= instruction_code(9 downto 7); --9 to 7  is always a register index
 RegA_addr <= instruction_code (6 downto 4); -- 6 to 4 is a register index or 000
 --register index for two's complement operation is passed by RegB_addr.
@@ -59,10 +57,10 @@ jump_address <=  instruction_code (2 downto 0); -- Address to jump to in jump in
 immediate_value <= instruction_code (3 downto 0);
 
 if (instruction_code(11 downto 10) = "11") then
-    register_EN <= instruction_code(9 downto 7);
-else 
     register_EN <= "111";
-end if; 
+else
+    register_EN <= instruction_code(9 downto 7);
+end if;
 
 load_sel <= not(instruction_code(11));
 
