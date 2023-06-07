@@ -37,8 +37,11 @@ entity mux_2_way_4_bit is
            load_select : in STD_LOGIC;
            out_to_reg_bank : out STD_LOGIC_VECTOR (3 downto 0));
 end mux_2_way_4_bit;
+
 architecture Behavioral of mux_2_way_4_bit is
 
 begin
+
 out_to_reg_bank <= input_num when (load_select = '1') else immediate_value;
+
 end behavioral;

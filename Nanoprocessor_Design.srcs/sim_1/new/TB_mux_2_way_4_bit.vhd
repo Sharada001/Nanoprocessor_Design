@@ -42,9 +42,8 @@ COMPONENT mux_2_way_4_bit
            load_select : in STD_LOGIC;
            out_to_reg_bank : out STD_LOGIC_VECTOR (3 downto 0));
 END COMPONENT;
-
-signal load_select : Std_logic;
 signal immediate_value, input_num, out_to_reg_bank : STD_LOGIC_VECTOR (3 downto 0);
+signal load_select : Std_logic;
 
 begin
 UUT: mux_2_way_4_bit PORT MAP(
