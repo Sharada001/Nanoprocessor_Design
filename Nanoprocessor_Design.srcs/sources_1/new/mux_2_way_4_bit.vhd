@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/25/2023 02:16:14 PM
+-- Create Date: 06/04/2023 10:17:16 AM
 -- Design Name: 
--- Module Name: Reg - Behavioral
+-- Module Name: mux_2_way_4_bit - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Reg is
-    Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
-           En : in STD_LOGIC;
-           Clk : in STD_LOGIC;
-           Q : out STD_LOGIC_VECTOR (3 downto 0):= "0000");
-end Reg;
+entity mux_2_way_4_bit is
+    Port ( immediate_value : in STD_LOGIC_VECTOR (3 downto 0);
+           input_num : in STD_LOGIC_VECTOR (3 downto 0);
+           load_select : in STD_LOGIC;
+           out_to_reg_bank : out STD_LOGIC_VECTOR (3 downto 0));
+end mux_2_way_4_bit;
 
-architecture Behavioral of Reg is
+architecture Behavioral of mux_2_way_4_bit is
 
 begin
 
-process (Clk) begin
- if (rising_edge(Clk)) then -- respond when clock rises
-    if En = '1' then -- Enable should be set
-        Q <= D;
-    end if;
- end if;
-end process;
+out_to_reg_bank <= input_num when (load_select = '1') else immediate_value;
 
-
-end Behavioral;
+end behavioral;

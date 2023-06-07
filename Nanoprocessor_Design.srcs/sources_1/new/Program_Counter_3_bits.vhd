@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/25/2023 02:16:14 PM
+-- Create Date: 06/04/2023 02:06:52 AM
 -- Design Name: 
--- Module Name: Reg - Behavioral
+-- Module Name: Program_Counter_3_bits - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,25 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Reg is
-    Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
-           En : in STD_LOGIC;
-           Clk : in STD_LOGIC;
-           Q : out STD_LOGIC_VECTOR (3 downto 0):= "0000");
-end Reg;
+entity Program_Counter_3_bits is
+    Port ( in_addr : in STD_LOGIC_VECTOR (2 downto 0);
+           reset : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           out_addr : out STD_LOGIC_VECTOR (2 downto 0));
+end Program_Counter_3_bits;
 
-architecture Behavioral of Reg is
+architecture Behavioral of Program_Counter_3_bits is
 
 begin
 
 process (Clk) begin
  if (rising_edge(Clk)) then -- respond when clock rises
-    if En = '1' then -- Enable should be set
-        Q <= D;
+    if reset = '0' then -- Enable should be set
+        out_addr <= in_addr;
+    else
+        out_addr <= "000";
     end if;
  end if;
 end process;
-
 
 end Behavioral;

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/25/2023 02:16:14 PM
+-- Create Date: 04/06/2023 03:05:00 PM
 -- Design Name: 
--- Module Name: Reg - Behavioral
+-- Module Name: Clock - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,27 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Reg is
-    Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
-           En : in STD_LOGIC;
-           Clk : in STD_LOGIC;
-           Q : out STD_LOGIC_VECTOR (3 downto 0):= "0000");
-end Reg;
+entity Clock is
+    Port ( Clk_in : in STD_LOGIC := '0';
+           Clk_out : out STD_LOGIC :='1');
+end Clock;
 
-architecture Behavioral of Reg is
+architecture Behavioral of Clock is
+
+signal count : integer := 1;
+signal clk_status : std_logic := '0';
 
 begin
 
-process (Clk) begin
- if (rising_edge(Clk)) then -- respond when clock rises
-    if En = '1' then -- Enable should be set
-        Q <= D;
-    end if;
- end if;
-end process;
-
-
+    process (Clk_in) begin
+        if(rising_edge(Clk_in)) then
+            count <= count+1;
+            if(count = 5)then   -- Counting frequency scaler(Reduced to 5 to simulation purposes.IF not 5M.)
+                clk_status <= not clk_status;
+                Clk_out <= clk_status;                
+                count<=1;
+            end if;
+        end if;
+    end process;
+            
 end Behavioral;
