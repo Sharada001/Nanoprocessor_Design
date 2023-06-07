@@ -1,8 +1,7 @@
 # Nanoprocessor Design
 
-<<<<<<< HEAD
 <h2>Clock Component Interface ~</h2>
-=======
+
 <h2>Components already finished ~</h2>
 <ul>
 <li>Register Bank</li>
@@ -22,7 +21,6 @@
   
 </ul>
 
->>>>>>> main
 
 <pre>
 <code>
