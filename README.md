@@ -20,7 +20,12 @@ end COMPONENT;
 </code>
 </pre>
 
+<h3>Top Level Component Timing Diagram ~</h3>
+<p align="center">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/69d1936739998b96cee18c00aac7649c538b654b/Timing_Diagrams/Top_Level_Component.jpg">
+</p>
 
+<br>
 
 <h2>Clock Component Interface ~</h2>
 
