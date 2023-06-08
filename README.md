@@ -1,5 +1,27 @@
 # Nanoprocessor Design
 
+<h2>Nanoprocessor_Design Top Level Component Interface ~</h2>
+
+<pre>
+<code>
+-- Nanoprocessor_Design Top Level Component Interface
+COMPONENT Nanoprocessor_Design
+    Port ( Clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           PCOutAddr : out STD_LOGIC_VECTOR (2 downto 0);
+           InstructionCode : out STD_LOGIC_VECTOR (11 downto 0);
+           Register0, Register1, Register2, Register3, Register4, Register5, Register6, Register7   : out STD_LOGIC_VECTOR (3 downto 0);
+           OverflowFlag : out STD_LOGIC;
+           ZeroFlag : out STD_LOGIC;
+           JumpFlag : out STD_LOGIC;
+           To7Segment : out STD_LOGIC_VECTOR (6 downto 0)
+    );
+end COMPONENT; 
+</code>
+</pre>
+
+
+
 <h2>Clock Component Interface ~</h2>
 
 <pre>
@@ -148,6 +170,9 @@ component 2_way_4_bit_Mux
 end component;
 </code>
 </pre>
+
+
+
 
 
 

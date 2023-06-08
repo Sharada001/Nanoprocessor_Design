@@ -41,15 +41,16 @@ architecture Behavioral of Program_ROM is
 
 type rom_type is array (0 to 7) of std_logic_vector(11 downto 0);
  
- signal twelveSegmant_ROM : rom_type := (  -- Program is hardcoded here.
- "010010110010", -- 0
- "111100101011", -- 1
- "010010101000", -- 2
- "011110000010", -- 3
- "001001110011", -- 4
- "001001010110", -- 5
- "000011100100", -- 6
- "100001110010"  -- 7
+signal twelveSegmant_ROM : rom_type := (  -- Program is hardcoded here.
+ "100010000011", -- 0 -- 886
+ "100100000001", -- 1 -- 901
+ "010100000000", -- 2 -- 500
+ "001110010000", -- 3 -- 390
+ "000010100000", -- 4 -- A0
+ "110010000111", -- 5 -- C87
+ "110000000011", -- 6 -- C03
+ "101110000000"  -- 7 -- B80
+
 );
 
 begin

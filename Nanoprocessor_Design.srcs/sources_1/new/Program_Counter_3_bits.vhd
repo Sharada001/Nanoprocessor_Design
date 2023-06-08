@@ -35,7 +35,7 @@ entity Program_Counter_3_bits is
     Port ( in_addr : in STD_LOGIC_VECTOR (2 downto 0);
            reset : in STD_LOGIC;
            clk : in STD_LOGIC;
-           out_addr : out STD_LOGIC_VECTOR (2 downto 0));
+           out_addr : out STD_LOGIC_VECTOR (2 downto 0) := "000");
 end Program_Counter_3_bits;
 
 architecture Behavioral of Program_Counter_3_bits is

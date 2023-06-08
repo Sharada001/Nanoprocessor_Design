@@ -33,12 +33,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Instruction_Decoder is
     Port ( instruction_code : in STD_LOGIC_VECTOR (11 downto 0);
+           operation : out STD_LOGIC_VECTOR (1 downto 0);
            immediate_value : out STD_LOGIC_VECTOR (3 downto 0);
            RegA_addr, RegB_addr : out STD_LOGIC_VECTOR (2 downto 0); --This should be fed in to the two 8 way 4 bit muxes.
            jump_address : out STD_LOGIC_VECTOR (2 downto 0);
            register_EN : out STD_LOGIC_VECTOR (2 downto 0);
            add_sub_sel : out STD_LOGIC;
-           load_sel : out STD_LOGIC );  
+           load_sel : out STD_LOGIC );
 end Instruction_Decoder;
 
 architecture Behavioral of Instruction_Decoder is
@@ -46,6 +47,9 @@ architecture Behavioral of Instruction_Decoder is
 begin
 
 process (instruction_code) is begin
+--process begin
+
+operation <= instruction_code(11 downto 10);
 
 -- Ra and Rb are swapped compared to what given in PDF
 RegB_addr <= instruction_code(9 downto 7); --9 to 7  is always a register index
@@ -57,7 +61,7 @@ jump_address <=  instruction_code (2 downto 0); -- Address to jump to in jump in
 immediate_value <= instruction_code (3 downto 0);
 
 if (instruction_code(11 downto 10) = "11") then
-    register_EN <= "111";
+    register_EN <= "110";
 else
     register_EN <= instruction_code(9 downto 7);
 end if;
@@ -65,4 +69,5 @@ end if;
 load_sel <= not(instruction_code(11));
 
 end process;
+
 end Behavioral;

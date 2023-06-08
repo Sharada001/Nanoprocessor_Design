@@ -42,11 +42,10 @@ signal count : integer := 1;
 signal clk_status : std_logic := '0';
 
 begin
-
     process (Clk_in) begin
         if(rising_edge(Clk_in)) then
             count <= count+1;
-            if(count = 5)then   -- Counting frequency scaler(Reduced to 5 to simulation purposes.IF not 5M.)
+            if(count = 2)then   -- Counting frequency scaler(Reduced to 5 to simulation purposes.IF not 5M.)
                 clk_status <= not clk_status;
                 Clk_out <= clk_status;                
                 count<=1;
