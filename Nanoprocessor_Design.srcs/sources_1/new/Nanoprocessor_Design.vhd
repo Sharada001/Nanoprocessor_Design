@@ -34,13 +34,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Nanoprocessor_Design is
     Port ( Clk : in STD_LOGIC;
            reset : in STD_LOGIC;
-           PCOutAddr : out STD_LOGIC_VECTOR (2 downto 0);
-           InstructionCode : out STD_LOGIC_VECTOR (11 downto 0);
-           Register0, Register1, Register2, Register3, Register4, Register5, Register6, Register7 : out STD_LOGIC_VECTOR (3 downto 0);
+           Register7 : out STD_LOGIC_VECTOR (3 downto 0);
            OverflowFlag : out STD_LOGIC;
            ZeroFlag : out STD_LOGIC;
-           JumpFlag : out STD_LOGIC;
-           To7Segment : out STD_LOGIC_VECTOR (6 downto 0));
+           To7Segment : out STD_LOGIC_VECTOR (6 downto 0);
+           Display : out STD_LOGIC_VECTOR (3 downto 0));
 end Nanoprocessor_Design;
 
 architecture Behavioral of Nanoprocessor_Design is
@@ -187,7 +185,6 @@ ProgramCounter : Program_Counter_3_bits
            clk => Clk_Sig,
            out_addr => PC_Out_Addr );
 
-PCOutAddr <= PC_Out_Addr;
 
 ProgramROM : Program_ROM
     Port map(
@@ -265,16 +262,7 @@ RegisterBank : register_bank
            out5 => Data_Bus_5, 
            out6 => Data_Bus_6, 
            out7 => Data_Bus_7);
-
-Register0 <= Data_Bus_0;
-Register1 <= Data_Bus_1;
-Register2 <= Data_Bus_2;
-Register3 <= Data_Bus_3;
-Register4 <= Data_Bus_4;
-Register5 <= Data_Bus_5;
-Register6 <= Data_Bus_6;
-Register7 <= Data_Bus_7;
-
+           
 SevenSegments : LUT_16_7
     Port map( 
         address => Data_Bus_7,
@@ -290,7 +278,7 @@ Adder : Adder_3_Bit
            Overflow => Overflow_Addr_Flag );
 
 Jump_Flag <= '1' when ( RegB_Value = "0000" and Operation = "11" ) else '0';
-JumpFlag <= Jump_Flag;
+
 
 Mux2Way3Bit : Mux_2_way_3_bit
     Port map(
@@ -299,6 +287,6 @@ Mux2Way3Bit : Mux_2_way_3_bit
            Jump_flag => Jump_Flag,
            Out_addr => Next_Addr );
 
-InstructionCode <= Instruction_Bus;
 
+Display <="1110";
 end Behavioral;

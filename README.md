@@ -1,6 +1,7 @@
 # Nanoprocessor Design
 
 <h2>Nanoprocessor_Design Top Level Component Interface ~</h2>
+<h6>Bitstream file(.bit format) is located at Nanoprocessor_Design.runs\impl_2\Nanoprocessor_Design.bit</h6>
 
 <pre>
 <code>
