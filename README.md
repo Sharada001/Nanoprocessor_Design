@@ -1,5 +1,10 @@
 # Nanoprocessor Design
 
+<h3>Top Level Component Timing Diagram ~</h3>
+<p align="center">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/69d1936739998b96cee18c00aac7649c538b654b/Timing_Diagrams/Top_Level_Component.jpg">
+</p>
+
 <h2>Nanoprocessor_Design Top Level Component Interface ~</h2>
 <h6>Bitstream file(.bit format) is located at Nanoprocessor_Design.runs\impl_2\Nanoprocessor_Design.bit</h6>
 
@@ -7,24 +12,16 @@
 <code>
 -- Nanoprocessor_Design Top Level Component Interface
 COMPONENT Nanoprocessor_Design
-    Port ( Clk : in STD_LOGIC;
-           reset : in STD_LOGIC;
-           PCOutAddr : out STD_LOGIC_VECTOR (2 downto 0);
-           InstructionCode : out STD_LOGIC_VECTOR (11 downto 0);
-           Register0, Register1, Register2, Register3, Register4, Register5, Register6, Register7   : out STD_LOGIC_VECTOR (3 downto 0);
-           OverflowFlag : out STD_LOGIC;
-           ZeroFlag : out STD_LOGIC;
-           JumpFlag : out STD_LOGIC;
-           To7Segment : out STD_LOGIC_VECTOR (6 downto 0)
-    );
-end COMPONENT; 
+     Port ( Clk : in STD_LOGIC;
+         reset : in STD_LOGIC;
+         Register7 : out STD_LOGIC_VECTOR (3 downto 0);
+         OverflowFlag : out STD_LOGIC;
+         ZeroFlag : out STD_LOGIC;
+         To7Segment : out STD_LOGIC_VECTOR (6 downto 0);
+         Display : out STD_LOGIC_VECTOR (3 downto 0));
+end COMPONENT;  
 </code>
 </pre>
-
-<h3>Top Level Component Timing Diagram ~</h3>
-<p align="center">
-<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/69d1936739998b96cee18c00aac7649c538b654b/Timing_Diagrams/Top_Level_Component.jpg">
-</p>
 
 <br>
 
