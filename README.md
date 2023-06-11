@@ -1,16 +1,24 @@
-# Nanoprocessor Design
+
+<h1 align="center">Nanoprocessor_Design Top Level Component</h2>
 
 <h3>Top Level Component Timing Diagram ~</h3>
 <p align="center">
-<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/69d1936739998b96cee18c00aac7649c538b654b/Timing_Diagrams/Top_Level_Component.jpg">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/56c3a232443d34a58ecdde6395ae03160849cc42/Timing_Diagrams/Top_Level_Component.jpg">
 </p>
 
-<h2>Nanoprocessor_Design Top Level Component Interface ~</h2>
-<h6>Bitstream file(.bit format) is located at Nanoprocessor_Design.runs\impl_2\Nanoprocessor_Design.bit</h6>
+<br>
+<p align="center">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/56c3a232443d34a58ecdde6395ae03160849cc42/Timing_Diagrams/Top_Level_Component_Part_1.jpg">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/56c3a232443d34a58ecdde6395ae03160849cc42/Timing_Diagrams/Top_Level_Component_Part_2.jpg">
+<img src="https://github.com/Sharada001/Nanoprocessor_Design/blob/56c3a232443d34a58ecdde6395ae03160849cc42/Timing_Diagrams/Top_Level_Component_Part_3.jpg">
+</p>
+<br>
+
+<h2>Top Level Component Interface ~</h2>
 
 <pre>
 <code>
--- Nanoprocessor_Design Top Level Component Interface
+-- Top Level Component Interface
 COMPONENT Nanoprocessor_Design
      Port ( Clk : in STD_LOGIC;
          reset : in STD_LOGIC;
@@ -23,6 +31,8 @@ end COMPONENT;
 </code>
 </pre>
 
+<br>
+<h6>Bitstream file(.bit format) is located at Nanoprocessor_Design.runs\impl_2\Nanoprocessor_Design.bit</h6>
 <br>
 
 <h2>Clock Component Interface ~</h2>
