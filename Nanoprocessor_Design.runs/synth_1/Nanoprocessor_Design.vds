@@ -2,12 +2,12 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun Jun 11 02:00:38 2023
-# Process ID: 18648
-# Current directory: C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.runs/synth_1
+# Start of session at: Mon Jun 12 16:06:21 2023
+# Process ID: 18704
+# Current directory: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/synth_1
 # Command line: vivado.exe -log Nanoprocessor_Design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nanoprocessor_Design.tcl
-# Log file: C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.runs/synth_1/Nanoprocessor_Design.vds
-# Journal file: C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.runs/synth_1\vivado.jou
+# Log file: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/synth_1/Nanoprocessor_Design.vds
+# Journal file: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Nanoprocessor_Design.tcl -notrace
 Command: synth_design -top Nanoprocessor_Design -part xc7a35tcpg236-1
@@ -15,81 +15,81 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10556 
+INFO: Helper process launched with PID 17172 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 384.164 ; gain = 97.633
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 383.512 ; gain = 98.242
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Nanoprocessor_Design' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:44]
-INFO: [Synth 8-3491] module 'Clock' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:34' bound to instance 'SlowClk' of component 'Clock' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:176]
-INFO: [Synth 8-638] synthesizing module 'Clock' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'Clock' (1#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:39]
-INFO: [Synth 8-3491] module 'Program_Counter_3_bits' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:34' bound to instance 'ProgramCounter' of component 'Program_Counter_3_bits' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'Program_Counter_3_bits' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Program_Counter_3_bits' (2#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:41]
-INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:35' bound to instance 'ProgramROM' of component 'Program_ROM' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:189]
-INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (3#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:40]
-INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'InstructionDecoder' of component 'Instruction_Decoder' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (4#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
-INFO: [Synth 8-3491] module 'Mux_8_way_4_bit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:34' bound to instance 'Mux8Way4BitA' of component 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:209]
-INFO: [Synth 8-638] synthesizing module 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:47]
-INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder' of component 'Decoder_3_to_8' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:59]
-INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
-INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (5#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
-INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (6#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Mux_8_way_4_bit' (7#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:47]
-INFO: [Synth 8-3491] module 'Mux_8_way_4_bit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:34' bound to instance 'Mux8Way4BitB' of component 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:222]
-INFO: [Synth 8-3491] module 'Add_Sub_Unit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:34' bound to instance 'AddSubUnit' of component 'Add_Sub_Unit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:235]
-INFO: [Synth 8-638] synthesizing module 'Add_Sub_Unit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
-INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:34' bound to instance 'RCA_4_A' of component 'RCA_4' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:51]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:66]
-INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:42]
-INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:56]
-INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'HA' (8#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:41]
-INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'FA' (9#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:42]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:73]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:80]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'RCA_4' (10#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'Add_Sub_Unit' (11#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
-INFO: [Synth 8-3491] module 'mux_2_way_4_bit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:34' bound to instance 'Mux2Way4Bit' of component 'mux_2_way_4_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:244]
-INFO: [Synth 8-638] synthesizing module 'mux_2_way_4_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'mux_2_way_4_bit' (12#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:41]
-INFO: [Synth 8-3491] module 'register_bank' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:34' bound to instance 'RegisterBank' of component 'register_bank' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:251]
-INFO: [Synth 8-638] synthesizing module 'register_bank' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:42]
-INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder' of component 'Decoder_3_to_8' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:60]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register0' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Reg' (13#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:41]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register1' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:75]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register2' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:83]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register3' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:91]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register4' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:99]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register5' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:107]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register6' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:115]
-INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register7' of component 'Reg' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:123]
-INFO: [Synth 8-256] done synthesizing module 'register_bank' (14#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:42]
-INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'SevenSegments' of component 'LUT_16_7' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:266]
-INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (15#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
-INFO: [Synth 8-3491] module 'Adder_3_Bit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:34' bound to instance 'Adder' of component 'Adder_3_Bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:273]
-INFO: [Synth 8-638] synthesizing module 'Adder_3_Bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:41]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:54]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:61]
-INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'Adder_3_Bit' (16#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:41]
-INFO: [Synth 8-3491] module 'Mux_2_way_3_bit' declared at 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:34' bound to instance 'Mux2Way3Bit' of component 'Mux_2_way_3_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:283]
-INFO: [Synth 8-638] synthesizing module 'Mux_2_way_3_bit' [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Mux_2_way_3_bit' (17#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:41]
-WARNING: [Synth 8-3848] Net Register7 in module/entity Nanoprocessor_Design does not have driver. [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:37]
-INFO: [Synth 8-256] done synthesizing module 'Nanoprocessor_Design' (18#1) [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Nanoprocessor_Design' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:44]
+INFO: [Synth 8-3491] module 'Clock' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:34' bound to instance 'SlowClk' of component 'Clock' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'Clock' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Clock' (1#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd:39]
+INFO: [Synth 8-3491] module 'Program_Counter_3_bits' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:34' bound to instance 'ProgramCounter' of component 'Program_Counter_3_bits' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter_3_bits' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter_3_bits' (2#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd:41]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:35' bound to instance 'ProgramROM' of component 'Program_ROM' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (3#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd:40]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'InstructionDecoder' of component 'Instruction_Decoder' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (4#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd:45]
+INFO: [Synth 8-3491] module 'Mux_8_way_4_bit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:34' bound to instance 'Mux8Way4BitA' of component 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder' of component 'Decoder_3_to_8' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_0' of component 'Decoder_2_to_4' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'Decoder_2_to_4' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_2_to_4' (5#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:40]
+INFO: [Synth 8-3491] module 'Decoder_2_to_4' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd:34' bound to instance 'Decoder_2_to_4_1' of component 'Decoder_2_to_4' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_3_to_8' (6#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Mux_8_way_4_bit' (7#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:47]
+INFO: [Synth 8-3491] module 'Mux_8_way_4_bit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd:34' bound to instance 'Mux8Way4BitB' of component 'Mux_8_way_4_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:222]
+INFO: [Synth 8-3491] module 'Add_Sub_Unit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:34' bound to instance 'AddSubUnit' of component 'Add_Sub_Unit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'Add_Sub_Unit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
+INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:34' bound to instance 'RCA_4_A' of component 'RCA_4' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:51]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_0' of component 'HA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'HA' (8#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:41]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd:34' bound to instance 'HA_1' of component 'HA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'FA' (9#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:42]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:73]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:80]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_3' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'RCA_4' (10#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Add_Sub_Unit' (11#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
+INFO: [Synth 8-3491] module 'mux_2_way_4_bit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:34' bound to instance 'Mux2Way4Bit' of component 'mux_2_way_4_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'mux_2_way_4_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_way_4_bit' (12#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd:41]
+INFO: [Synth 8-3491] module 'register_bank' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:34' bound to instance 'RegisterBank' of component 'register_bank' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'register_bank' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:42]
+INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder' of component 'Decoder_3_to_8' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:60]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register0' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Reg' (13#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:41]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register1' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:75]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register2' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:83]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register3' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:91]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register4' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:99]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register5' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:107]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register6' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:115]
+INFO: [Synth 8-3491] module 'Reg' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd:34' bound to instance 'Register7' of component 'Reg' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'register_bank' (14#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd:42]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:35' bound to instance 'SevenSegments' of component 'LUT_16_7' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (15#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd:40]
+INFO: [Synth 8-3491] module 'Adder_3_Bit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:34' bound to instance 'Adder' of component 'Adder_3_Bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'Adder_3_Bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:41]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:54]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:61]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'Adder_3_Bit' (16#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd:41]
+INFO: [Synth 8-3491] module 'Mux_2_way_3_bit' declared at 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:34' bound to instance 'Mux2Way3Bit' of component 'Mux_2_way_3_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:283]
+INFO: [Synth 8-638] synthesizing module 'Mux_2_way_3_bit' [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2_way_3_bit' (17#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd:41]
+WARNING: [Synth 8-3848] Net Register7 in module/entity Nanoprocessor_Design does not have driver. [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Nanoprocessor_Design' (18#1) [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd:44]
 WARNING: [Synth 8-3917] design Nanoprocessor_Design has port Display[3] driven by constant 1
 WARNING: [Synth 8-3917] design Nanoprocessor_Design has port Display[2] driven by constant 1
 WARNING: [Synth 8-3917] design Nanoprocessor_Design has port Display[1] driven by constant 1
@@ -100,7 +100,7 @@ WARNING: [Synth 8-3331] design Nanoprocessor_Design has unconnected port Registe
 WARNING: [Synth 8-3331] design Nanoprocessor_Design has unconnected port Register7[1]
 WARNING: [Synth 8-3331] design Nanoprocessor_Design has unconnected port Register7[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.074 ; gain = 152.543
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.453 ; gain = 154.184
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -113,48 +113,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.074 ; gain = 152.543
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.453 ; gain = 154.184
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.074 ; gain = 152.543
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.453 ; gain = 154.184
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]
-Finished Parsing XDC File [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nanoprocessor_Design_propImpl.xdc].
+Parsing XDC File [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nanoprocessor_Design_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Nanoprocessor_Design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 771.586 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 773.133 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "twelveSegmant_ROM" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -269,7 +269,7 @@ INFO: [Synth 8-3886] merging instance 'RegisterBank/Register0/Q_reg[2]' (FD) to 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RegisterBank/Register0/Q_reg[3] )
 WARNING: [Synth 8-3332] Sequential element (RegisterBank/Register0/Q_reg[3]) is unused and will be removed from module Nanoprocessor_Design.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,13 +281,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 771.586 ; gain = 485.055
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 773.133 ; gain = 487.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 788.469 ; gain = 501.938
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 787.945 ; gain = 502.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,7 +318,7 @@ WARNING: [Synth 8-3332] Sequential element (RegisterBank/Register3/Q_reg[1]) is 
 WARNING: [Synth 8-3332] Sequential element (RegisterBank/Register3/Q_reg[3]) is unused and will be removed from module Nanoprocessor_Design.
 WARNING: [Synth 8-3332] Sequential element (RegisterBank/Register3/Q_reg[2]) is unused and will be removed from module Nanoprocessor_Design.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -342,7 +342,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -355,7 +355,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -367,25 +367,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -428,11 +428,11 @@ Report Instance Areas:
 |7     |  SlowClk        |Clock                  |    54|
 +------+-----------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 790.551 ; gain = 504.020
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 790.551 ; gain = 171.508
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 790.551 ; gain = 504.020
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 789.914 ; gain = 170.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 789.914 ; gain = 504.645
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -444,8 +444,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 101 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 790.551 ; gain = 516.176
-INFO: [Common 17-1381] The checkpoint 'C:/Users/accha/Desktop/XDC  Update/Nanoprocessor_Design.runs/synth_1/Nanoprocessor_Design.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 789.914 ; gain = 516.969
+INFO: [Common 17-1381] The checkpoint 'C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/synth_1/Nanoprocessor_Design.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Nanoprocessor_Design_utilization_synth.rpt -pb Nanoprocessor_Design_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 790.551 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 02:01:07 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 789.914 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 16:06:50 2023...

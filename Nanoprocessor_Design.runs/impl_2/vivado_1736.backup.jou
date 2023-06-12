@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun 12 16:07:06 2023
+# Process ID: 1736
+# Current directory: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/impl_2
+# Command line: vivado.exe -log Nanoprocessor_Design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nanoprocessor_Design.tcl -notrace
+# Log file: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/impl_2/Nanoprocessor_Design.vdi
+# Journal file: C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source Nanoprocessor_Design.tcl -notrace
