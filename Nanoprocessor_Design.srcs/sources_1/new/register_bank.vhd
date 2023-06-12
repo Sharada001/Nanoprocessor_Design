@@ -55,14 +55,27 @@ component Reg
 end component;
 
 signal Reg_EN_vector : STD_LOGIC_VECTOR (7 downto 0);
-signal inout1, inout2, inout3, inout4, inout5, inout6, inout7 : STD_LOGIC_VECTOR (3 downto 0);
+signal Input_vector : STD_LOGIC_VECTOR (3 downto 0);
+signal En_1, En_2, En_3, En_4, En_5, En_6, En_7 : STD_LOGIC;
+--signal Out_1, Out_2, Out_3, Out_4, Out_5, Out_6, Out_7 : STD_LOGIC_VECTOR (3 downto 0);
+
 begin
+
+    Input_vector <= "0000" when ( Reset='1' ) else input;
+    
     Decoder : Decoder_3_to_8 
     port map(
     I=>Reg_EN,
     Y=>Reg_EN_vector
     );
     
+    En_1 <= '1' when ( Reset='1' ) else Reg_EN_vector(1);
+    En_2 <= '1' when ( Reset='1' ) else Reg_EN_vector(2);
+    En_3 <= '1' when ( Reset='1' ) else Reg_EN_vector(3);
+    En_4 <= '1' when ( Reset='1' ) else Reg_EN_vector(4);
+    En_5 <= '1' when ( Reset='1' ) else Reg_EN_vector(5);
+    En_6 <= '1' when ( Reset='1' ) else Reg_EN_vector(6);
+    En_7 <= '1' when ( Reset='1' ) else Reg_EN_vector(7);
 
     Register0 : Reg 
     port map(
@@ -74,79 +87,59 @@ begin
     
     Register1 : Reg 
     port map(
-    EN=>Reg_EN_vector(1),
+    EN=>En_1,
     Clk=>Clk,
-    Q=>inout1,
-    D=>input
+    Q=>out1,
+    D=>Input_vector
     );
        
     Register2 : Reg 
     port map(
-    EN=>Reg_EN_vector(2),
+    EN=>En_2,
     Clk=>Clk,
-    Q=>inout2,
-    D=>input
+    Q=>out2,
+    D=>Input_vector
     );
     
     Register3 : Reg 
     port map(
-    EN=>Reg_EN_vector(3),
+    EN=>En_3,
     Clk=>Clk,
-    Q=>inout3,
-    D=>input
+    Q=>out3,
+    D=>Input_vector
     );
 
     Register4 : Reg 
     port map(
-    EN=>Reg_EN_vector(4),
+    EN=>En_4,
     Clk=>Clk,
-    Q=>inout4,
-    D=>input
+    Q=>out4,
+    D=>Input_vector
     );
   
     Register5 : Reg 
     port map(
-    EN=>Reg_EN_vector(5),
+    EN=>En_5,
     Clk=>Clk,
-    Q=>inout5,
-    D=>input
+    Q=>out5,
+    D=>Input_vector
     );
  
     Register6 : Reg 
     port map(
-    EN=>Reg_EN_vector(6),
+    EN=>En_6,
     Clk=>Clk,
-    Q=>inout6,
-    D=>input
+    Q=>out6,
+    D=>Input_vector
     );
     
     Register7 : Reg 
     port map(
-    EN=>Reg_EN_vector(7),
+    EN=>En_7,
     Clk=>Clk,
-    Q=>inout7,
-    D=>input
-    );    
+    Q=>out7,
+    D=>Input_vector
+    );
 
-process (Reset,inout1, inout2, inout3, inout4, inout5, inout6, inout7) is
-begin  
-        if (Reset='1') then
-            out1 <= "0000";
-            out2 <= "0000";
-            out3 <= "0000";
-            out4 <= "0000";
-            out5 <= "0000";
-            out6 <= "0000";
-            out7 <= "0000";
-        else
-            out1 <= inout1;
-            out2 <= inout2;
-            out3 <= inout3;
-            out4 <= inout4;
-            out5 <= inout5;
-            out6 <= inout6;
-            out7 <= inout7;
-        end if;
-end process;
  
 end Behavioral;

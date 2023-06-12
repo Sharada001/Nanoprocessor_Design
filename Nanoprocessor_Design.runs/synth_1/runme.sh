@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.runs/synth_1'
+HD_PWD='C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -287,6 +287,6 @@ Mux2Way3Bit : Mux_2_way_3_bit
            Jump_flag => Jump_Flag,
            Out_addr => Next_Addr );
 
-
+Register7 <= Data_Bus_7;
 Display <="1110";
 end Behavioral;

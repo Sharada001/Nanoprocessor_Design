@@ -16,38 +16,37 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.cache/wt [current_project]
+set_property parent.project_path C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo {c:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd}
-  {C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd}
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Add_Sub_Unit.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Adder_3_Bit.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Clock.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_2_to_4.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Decoder_3_to_8.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/FA.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/HA.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Instruction_Decoder.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/LUT_16_7.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_2_way_3_bit.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Mux_8_way_4_bit.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Program_Counter_3_bits.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Program_ROM.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/RCA_4.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/imports/new/Reg.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/mux_2_way_4_bit.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/register_bank.vhd
+  C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/sources_1/new/Nanoprocessor_Design.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,8 +56,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/accha/Desktop/Final Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc}}]
+read_xdc C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc
+set_property used_in_implementation false [get_files C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.srcs/constrs_1/imports/Nanoprocessor_Design/Basys3Labs.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
