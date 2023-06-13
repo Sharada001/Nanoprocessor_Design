@@ -40,6 +40,6 @@ end COMPONENT;
 </pre>
 
 <br>
-<h4><b>➡Bitstream file (.bit format) is located at ❝Nanoprocessor_Design.runs/impl_2/Nanoprocessor_Design.bit❞ ✨✨✨</b></h4>
+<h4><b>➡Bitstream file (.bit format) is located at ❝Nanoprocessor_Design.runs/impl_2/Nanoprocessor_Design.bit❞ ✨✨</b></h4>
 <br>
 
