@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2018.1 (64-bit)              -->
+<!-- Product Version: Vivado v2018.2.1 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="36" Path="C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.xpr">
+<Project Version="7" Minor="38" Path="F:/Workplace/Vivado/Nanoprocessor_Design/Nanoprocessor_Design.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="db8dbc8aa46e4a369ee0672df2e8ddf1"/>
@@ -53,6 +53,7 @@
     <Option Name="XSimArrayDisplayLimit" Val="1024"/>
     <Option Name="XSimTraceLimit" Val="65536"/>
     <Option Name="SimTypes" Val="rtl"/>
+    <Option Name="MEMEnableMemoryMapGeneration" Val="TRUE"/>
   </Configuration>
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
@@ -275,7 +276,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
