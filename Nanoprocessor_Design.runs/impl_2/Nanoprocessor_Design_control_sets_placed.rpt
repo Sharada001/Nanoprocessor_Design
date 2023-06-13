@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Tue Jun 13 01:19:05 2023
+| Date         : Tue Jun 13 12:36:57 2023
 | Host         : Chathuras-MSI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nanoprocessor_Design_control_sets_placed.rpt
 | Design       : Nanoprocessor_Design
@@ -63,9 +63,9 @@ Table of Contents
 +----------------+------------------------------+---------------------------+------------------+----------------+
 |  SlowClk/CLK   |                              |                           |                1 |              3 |
 |  Clk_IBUF_BUFG |                              |                           |                1 |              3 |
+|  SlowClk/CLK   | ProgramCounter/E[0]          |                           |                1 |              4 |
 |  SlowClk/CLK   | ProgramCounter/Q_reg[0][0]   |                           |                2 |              4 |
 |  SlowClk/CLK   | ProgramCounter/Q_reg[0]_0[0] |                           |                1 |              4 |
-|  SlowClk/CLK   | ProgramCounter/E[0]          |                           |                1 |              4 |
 |  Clk_IBUF_BUFG |                              | SlowClk/count[31]_i_1_n_0 |                8 |             31 |
 +----------------+------------------------------+---------------------------+------------------+----------------+
 

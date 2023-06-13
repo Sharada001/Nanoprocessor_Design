@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 13 01:16:26 2023
+# Process ID: 18460
+# Current directory: C:/Users/accha/Desktop/Nanoprocessor_Design
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5416 C:\Users\accha\Desktop\Nanoprocessor_Design\Nanoprocessor_Design.xpr
+# Log file: C:/Users/accha/Desktop/Nanoprocessor_Design/vivado.log
+# Journal file: C:/Users/accha/Desktop/Nanoprocessor_Design\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_Vivado/Vivado/2018.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Nanoprocessor_Design' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_Nanoprocessor_Design_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx_Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto db8dbc8aa46e4a369ee0672df2e8ddf1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nanoprocessor_Design_behav xil_defaultlib.TB_Nanoprocessor_Design -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Nanoprocessor_Design_behav -key {Behavioral:sim_1:Functional:TB_Nanoprocessor_Design} -tclbatch {TB_Nanoprocessor_Design.tcl} -view {C:/Users/accha/Desktop/Nanoprocessor_Design/TB_Nanoprocessor_Design_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+open_wave_config C:/Users/accha/Desktop/Nanoprocessor_Design/TB_Nanoprocessor_Design_behav.wcfg
+source TB_Nanoprocessor_Design.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Nanoprocessor_Design_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 927.848 ; gain = 22.793
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Tue Jun 13 01:17:37 2023] Launched synth_1...
+Run output will be captured here: C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/synth_1/runme.log
+launch_runs impl_2 -jobs 8
+[Tue Jun 13 01:18:35 2023] Launched impl_2...
+Run output will be captured here: C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1767.652 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1767.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1882.316 ; gain = 934.254
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Tue Jun 13 01:20:14 2023] Launched impl_2...
+Run output will be captured here: C:/Users/accha/Desktop/Nanoprocessor_Design/Nanoprocessor_Design.runs/impl_2/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 13 01:22:21 2023...
