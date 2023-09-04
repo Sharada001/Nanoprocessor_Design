@@ -24,8 +24,8 @@
 
 <h2>Top Level Component Interface ⏩</h2>
 
-<pre>
-<code>
+
+```vhdl
 -- Top Level Component Interface
 COMPONENT Nanoprocessor_Design
      Port ( Clk : in STD_LOGIC;
@@ -36,8 +36,8 @@ COMPONENT Nanoprocessor_Design
          To7Segment : out STD_LOGIC_VECTOR (6 downto 0);
          Display : out STD_LOGIC_VECTOR (3 downto 0));
 end COMPONENT;  
-</code>
-</pre>
+```
+
 
 <br>
 <h4><b>➡Bitstream file (.bit format) is located at ❝Nanoprocessor_Design.runs/impl_2/Nanoprocessor_Design.bit❞ ✨✨</b></h4>
